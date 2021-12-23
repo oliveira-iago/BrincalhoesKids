@@ -1,0 +1,145 @@
+﻿@{
+    ViewData["Title"] = "Marvel";
+}
+
+<!-- Importa a lib de sessões -->
+@using Microsoft.AspNetCore.Http;
+@model List<Produto>;
+
+
+<!-- Estilos-->
+<style>
+    .logo
+    {
+        width: 25%; height: auto;
+        min-width: 180px;
+        border-radius: 10px;
+        background-color: #ec1d24;
+    }
+    #conteudo
+    {
+        margin-top: 40px;
+        width: auto; height: auto;
+    }
+    div.produto
+    {
+        float: left; /* Forma de alinha as divs */
+        width: 200px; height: max-content;
+        border-width: 1px;
+        margin-left: 20px; margin-bottom: 20px;
+        border-style: solid;
+        border-color: #ec1d24;
+    }
+    div.preco-produto
+    {
+        float: left;
+        text-align: right;
+        width: 70%; height: 100%;
+        background-color: #ec1d24;
+        padding: 1px;
+    }
+    h2.preco-produto
+    {
+        color: white;
+        text-align: center;
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    div.quantidade-produto
+    {
+        float: left;
+        text-align: right;
+        width: 30%; height: 100%;
+        background-color: #ec1d24;
+        padding: 1px;
+    }
+    #quantidade
+    {
+        color: #ec1d24;
+        font-style: bold;
+        text-align: center;
+        width: 100%; height: auto;
+        font-size: 20px;
+    }
+    img.produto
+    {
+        height: 180px; width: 100%;
+        text-align: left;
+        /* Quando passar o mouse*/
+        cursor: pointer;
+    }
+    h1.produto
+    {
+        text-align: center;
+        color: black;
+        font-size: larger;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    p.produto
+    {
+        text-align: center;
+        color: #ec1d24;
+        font-size: medium;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    input.produto
+    {
+        border: 0;
+        width: 100%; height: 40px;
+        color: white;
+        background-color: #ec1d24;
+        font-size: large;
+        /* Quando passar o mouse*/
+        cursor: pointer;
+    }
+</style>
+
+<!-- Boas vindas -->
+<div class="text-center">
+    <img class="logo" src="~/Imagens/LOGO-MARVEL.png">
+</div>
+
+<div id="conteudo">
+
+    <!-- Montagem da listagem de produtos --> 
+    @{
+        //Contador
+        int cont = 0;
+        //Faz um loop recebendo cada objeto da lista
+        foreach (Produto produto in Model)
+        {
+            //Se a descrição for Marvel
+            if (produto.Descricao == "Marvel")
+            {
+                //Adiciona 1 ao contador
+                cont += 1;
+                //Item Produto
+                <div class="produto">
+                    <!-- Preço do produto -->
+                    <div class="preco-produto">
+                        <h2 class="preco-produto">R$ @produto.Valor</h2>
+                    </div>
+                    
+                    <!-- Foto, Nome e Descrição -->
+                    <img class="produto" src="~/Imagens/Produtos/@produto.Descricao/@produto.Nome .webp">
+                    <h1 class="produto">@produto.Nome</h1>
+                    <p class="produto">@produto.Descricao</p>
+
+                    <!--Adicionar o Item ao Carrinho
+                    Chama a função do CarrinhoController-->
+                    <div>
+                        <input class="produto" type="button" value="Adicionar ao Carrinho" onclick="location.href='/Carrinho/Inserir?Id=@produto.Id'">
+                    </div>
+                </div>
+            }
+            //Se contador for 5 (5 produtos por linha)
+            if (cont == 5)
+            {
+                //Quebra linha
+                <br/>
+                //Contador volta ao zero
+                cont = 0;
+            }
+        }
+    }
+</div>

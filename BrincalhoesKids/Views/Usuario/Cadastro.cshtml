@@ -1,0 +1,145 @@
+<!-- Importa a model usuario -->
+@model Usuario
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<!-- Estilos -->
+<style>
+    /* Redefinindo o css*/
+    *, .container { margin: 0; padding: 0; max-width: none; }
+    .mb-3 { margin-bottom: 0!important; }
+
+    .logo
+    {
+        width: 40%; height: auto;
+        min-width: 400px;
+        margin-top: 30px; margin-bottom: 30px;
+    }
+    input
+    {
+        color: #1170B4;
+        font-weight: 500;
+        width: 20%; height: 30px;
+        max-width: 300px; min-width: 180px;
+        border: 2px solid darkgray;
+        border-radius: 5px;
+        padding: 5px; margin-bottom: 15px;
+        outline-width: 0; /*Removendo a animação do focus*/
+    }
+    label
+    {
+        width: 100px; height: 30px;
+        text-align: left;
+    }
+    /* padrão Botão*/
+    #btn 
+    {
+        width: 50%; height: 40px;
+        max-width: 380px; min-width: 290px;
+        border: 0;
+        background-color: #1E90FF; /* Cor de fundo*/
+        padding: 10px; padding-bottom: 35px;/* Bordas internas*/
+        position: relative;
+        font-family: 'Open Sans', sans-serif; /* Fonte*/
+        font-size: 20px; /* Tamanho da fonte*/
+        text-decoration: none; /* Desativa a animação do texto*/
+        color: #fff; /* Cor do texto*/
+        background-image: linear-gradient(bottom, rgb(30, 86, 170) 0%, rgb(51, 132, 212) 100%); /* Cor de fundo*/
+        box-shadow: inset 0px 1px 0px #7fa5f1, 0px 3px 0px #0d486f; /* Sombra*/
+        border-radius: 5px; /* Borda arredondada*/
+        transition: 0.2s;
+    }
+    /* Ao clicar/ativar*/
+    #btn:active
+    {
+        top: 5px; /* Desce alguns pixels*/
+        background-image: linear-gradient(bottom, rgb(30, 93, 170) 100%, rgb(51, 132, 212) 0%); /* Cor de fundo*/
+        box-shadow: inset 0px 1px 0px #7fc7f1, inset 0px -1px 0px #0d346f; /* Sombra*/
+        color: white; /* Cor do texto*/
+        text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3); /* Sombra do texto*/
+        background: rgb(44, 149, 202); /* Fundo*/
+    }
+    /*Antes*/
+    #btn::before 
+    {
+        background-color:#072239; /* Cor de fundo*/
+        content:"";
+        display:block;
+        position:absolute;
+        width: 100%; height: 100%; /* Largura e Altura*/
+        padding-left: 2px; /* Borda de cima por dentro*/
+        padding-right: 2px; /* Borda da direita por dentro*/
+        padding-bottom: 4px; /* Borda de baixo por dentro*/
+        left: -2px; /* Esquerda*/
+        top: 5px; /* Cima*/
+        z-index:-1; /* Ajusta sobreposição*/
+        border-radius: 6px; /* Arredondamento da borda*/
+        box-shadow: 0px 1px 0px white; /* Sombra*/
+    }
+    /*Antes de ativar*/
+    #btn:active::before 
+    {
+        /*Sobe 2 pixel*/
+        top:-2px;
+    }
+    p
+    {
+        text-align: center;
+        color: red;
+    }
+</style>
+
+<div class="text-center">
+    <!-- Titulo e subtitulo -->
+    <img class="logo" src="~/Imagens/LETRA-USUARIO-CADASTRAR.png">
+
+    <h6 style="margin-bottom: 20px;">Já tem uma conta? <a href="/Usuario/Login">Fazer login</a></h6>
+    <!-- Formulário do tipo POST -->
+    <form method="POST" asp-action="Cadastro" style="text-align: center;">
+        <!-- LOGIN -->
+        <div>
+            <label>Login:</label>
+            <input type="text" asp-for="Login" required/>
+        </div>
+
+        <!-- NOME -->
+        <div>
+            <label>Nome:</label>
+            <input type="text" asp-for="Nome" required/>
+        </div>
+
+        <!-- SOBRENOME -->
+        <div>
+            <label>Sobrenome:</label>
+            <input type="text" asp-for="Sobrenome" required/>
+        </div>
+
+        <!-- E-mail -->
+        <div>
+            <label>E-mail:</label>
+            <input type="email" asp-for="Email" required/>
+        </div>
+
+        <!-- SENHA -->
+        <div>
+            <label>Senha:</label>
+            <input type="password" asp-for="Senha" required/>
+        </div>
+
+        <!-- DATA NASCIMENTO -->
+        <div>
+            <label>Nascimento:</label>
+            <input type="date" asp-for="DataNascimento" required/>
+        </div>
+
+        <br/>
+        <!-- Botão que envia os dados preenchidos -->
+        <input id="btn" type="submit" value="Cadastrar">
+        
+    </form>
+</div>
+
+<!-- Chama a mensagem do controller -->
+<p style="text-align: center;">@ViewBag.Mensagem</p>

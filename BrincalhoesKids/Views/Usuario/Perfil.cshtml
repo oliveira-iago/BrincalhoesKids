@@ -1,0 +1,122 @@
+@{
+    ViewData["Title"] = "Perfil";
+}
+
+<!-- Importa a lib de sessões -->
+@using Microsoft.AspNetCore.Http;
+@model UsuarioBD;
+
+<!-- Estilos -->
+<style>
+    /* Redefinindo o css*/
+    *, .container { margin: 0; padding: 0; max-width: none; }
+    .mb-3 { margin-bottom: 0!important; }
+
+    h1
+    {
+        font-style: bold;
+        font-size: 50px;
+    }
+    label
+    {
+        width: 100px;
+        text-align: left;
+    }
+    .botoes
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-icon
+    {
+        height: 30px; width: auto;
+    }    
+    /* padrão Botão*/
+    .btn 
+    {
+        width: 30%; height: 40px;
+        min-width: 230px; max-width: 270px;
+        margin-bottom: 10px;
+        border: 0;
+        background-color: #1E90FF; /* Cor de fundo*/
+        padding: 10px; padding-bottom: 35px;/* Bordas internas*/
+        font-family: 'Open Sans', sans-serif; /* Fonte*/
+        font-size: 18px; /* Tamanho da fonte*/
+        text-decoration: none; /* Desativa a animação do texto*/
+        color: #fff; /* Cor do texto*/
+        border-radius: 5px; /* Borda arredondada*/
+    }
+    /* Ao passar mouse*/
+    .btn:hover
+    {
+        color: white;
+        background-color: #0070C0;
+    }
+</style>
+
+
+<div style="text-align: center;">
+    <!-- Saudação-->
+    <h3 style="margin-top: 40px">Olá @Context.Session.GetString("NomeUsuario")!</h3>
+
+    <!-- DADOS -->
+    <h5 style="margin-top: 20px">Seus Dados</h5>
+    <!-- NOME -->
+    <div>
+        <label>Nome:</label>
+        <label>@Context.Session.GetString("NomeUsuario") @Context.Session.GetString("SobrenomeUsuario")</label>
+    </div>
+    <!-- LOGIN -->
+    <div>
+        <label>Login:</label>
+        <label>@Context.Session.GetString("LoginUsuario")</label>
+    </div>
+    <!-- EMAIL -->
+    <div>
+        <label>E-mail:</label>
+        <label>@Context.Session.GetString("EmailUsuario")</label>
+    </div>
+    <!-- DATA NASCIMENTO -->
+    @{
+        //Recebe o ID do usuario logado
+        int id = (int)Context.Session.GetInt32("IdUsuario");
+
+        //Cria um objeto da classe que manipula o banco de dados
+        UsuarioBD uBD = new UsuarioBD();
+
+        //Busca o usuario no banco de dados pelo Id
+        Usuario usuario = uBD.BuscarPorId(id);
+
+        //Converte o datetime para texto (dia/mes/ano)
+        String nascimento = usuario.DataNascimento.ToString("dd/MM/yyyy");
+
+        <div>
+            <label>Nascimento:</label>
+            <label>@nascimento</label>
+        </div>
+    }
+
+    <h5 style="margin-top: 30px; margin-bottom: 20px;">O que deseja fazer?</h5>
+    
+    <!--BOTÕES DE AÇÃO-->
+    <div class="botoes">
+        <!-- Editar Perfil -->
+        <button class="btn" type="button" value="Editar meu perfil" onclick="location.href='@Url.Action("Editar", "Usuario")'">
+            <img class="btn-icon" align="left" src="~/Imagens/Icones/ico-branco-perfil.png">
+            Editar meus dados
+        </button>
+        
+        <!-- Ver Carrinho -->
+        <button class="btn" type="button" value="Ver meu carrinho" onclick="location.href='@Url.Action("Index", "Carrinho")'">
+            <img class="btn-icon" align="left" src="~/Imagens/Icones/ico-branco-carrinho.png">
+            Ver meu carrinho
+        </button>
+
+        <!-- Logout -->
+        <button class="btn" type="button" onclick="location.href='@Url.Action("Logout", "Usuario")'">
+            <img class="btn-icon" align="left" src="~/Imagens/Icones/ico-branco-logout.png">
+            Sair desta conta
+        </button>
+    </div>
+</div>

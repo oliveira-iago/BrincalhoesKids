@@ -1,0 +1,220 @@
+<!-- Importa a model Carrinho -->
+@model Carrinho
+
+@{
+    ViewData["Title"] = "Editar Item";
+}
+<!-- Scripts-->
+<script>
+    //Função que aumenta a quantidade do item
+    function mais(idInput) 
+    {
+        //Recebe o valor atual do input
+        let num = document.getElementById(idInput);
+        //Se o valor for menor que 99
+        if (parseInt(num.value) < 99) 
+        {
+            //Soma 1 ao valor
+            num.value = parseInt(num.value) + 1;
+        }
+    }
+
+    //Função que diminui a quantidade do item
+    function menos(idInput) 
+    {
+        //Recebe o valor atual do input
+        let num = document.getElementById(idInput);
+        //Se o valor for maior que 1
+        if (parseInt(num.value) > 1) 
+        {
+            //Subtrai 1 do valor
+            num.value = parseInt(num.value) - 1;
+        }
+    }
+</script>
+
+<!-- Estilos -->
+<style>
+    /* Redefinindo o css*/
+    *, .container { margin: 0; padding: 0; max-width: none; }
+    .mb-3 { margin-bottom: 0!important; }
+
+    
+    .logo
+    {
+        width: 50%;
+        margin-top: 30px;
+        min-width: 400px;
+        height: auto;
+    }
+    .quantidade
+    {
+        width: 100%; 
+        display: flex; 
+        justify-content: center;
+        text-align: center;
+    }
+    #inputQntd
+    {
+        margin-left: 10px; margin-right: 10px;
+        color: #1170B4;
+        font-weight: 500;
+        width: 60px; height: 50px;
+        font-size: 27px;
+        text-align: center;
+        border: 2px solid darkgray;
+        border-radius: 5px;
+        padding: 3px;
+        outline-width: 0; /*Removendo a animação do focus*/
+    }
+    label
+    {
+        text-align: left;
+        color: #1170B4;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    #conteudo
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 55px;
+    }
+    div.infos
+    {
+        margin-left: 5px;
+        text-align: left;
+    }
+    div.infos h1
+    {
+        font-family: cursive;
+
+    }
+    #imagem
+    {
+        width: 30%;
+        max-width : 350px; min-width : 250px;
+        max-height: 350px; min-height: 250px;
+    }
+    /* padrão Botão*/
+    .btn
+    {
+        border: 0;
+        width: 100%; height: 45px;
+        background-color: #1E90FF; /* Cor de fundo*/
+        padding: 10px; padding-left: 50px; padding-right: 50px;/* Bordas internas*/
+        position: relative;
+        font-family: 'Open Sans', sans-serif; /* Fonte*/
+        font-size: 20px; /* Tamanho da fonte*/
+        text-decoration: none; /* Desativa a animação do texto*/
+        color: #fff; /* Cor do texto*/
+        background-image: linear-gradient(bottom, rgb(30, 86, 170) 0%, rgb(51, 132, 212) 100%); /* Cor de fundo*/
+        box-shadow: inset 0px 1px 0px #7fa5f1, 0px 4px 0px #0d486f; /* Sombra*/
+        border-radius: 5px; /* Borda arredondada*/
+        transition: 0.2s;
+    }
+    .btn:hover
+    {
+        color: white;
+    }
+    /* Ao clicar/ativar*/
+    .btn:active
+    {
+        top: 5px; /* Desce alguns pixels*/
+        background-image: linear-gradient(bottom, rgb(30, 93, 170) 100%, rgb(51, 132, 212) 0%); /* Cor de fundo*/
+        box-shadow: inset 0px 1px 0px #7fc7f1, inset 0px -1px 0px #0d346f; /* Sombra*/
+        color: white; /* Cor do texto*/
+        text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3); /* Sombra do texto*/
+        background: rgb(44, 149, 202); /* Fundo*/
+    }
+    /*Antes*/
+    .btn::before 
+    {
+        background-color:#072239; /* Cor de fundo*/
+        content:"";
+        display:block;
+        position:absolute;
+        width: 100%; height: 100%; /* Largura e Altura*/
+        padding-left: 2px; /* Borda de cima por dentro*/
+        padding-right: 2px; /* Borda da direita por dentro*/
+        padding-bottom: 4px; /* Borda de baixo por dentro*/
+        left: -2px; /* Esquerda*/
+        top: 5px; /* Cima*/
+        z-index:-1; /* Ajusta sobreposição*/
+        border-radius: 6px; /* Arredondamento da borda*/
+        box-shadow: 0px 1px 0px white; /* Sombra*/
+    }
+    /*Antes de ativar*/
+    .btn:active::before 
+    {
+        /*Sobe 2 pixel*/
+        top:-2px;
+    }
+</style>
+
+<div class="text-center">
+    <!-- Titulo-->
+    <img class="logo" src="~/Imagens/LETRA-CARRINHO-EDITAR.png">
+</div>
+
+<!-- Formulário do tipo POST -->
+<form method="POST" asp-action="Editar" style="text-align: center;">
+    
+    <!-- ID OCULTO-->
+    <input type="hidden" asp-for="Id">
+    
+    <!-- ID PRODUTO OCULTO -->
+    <input type="hidden" asp-for="IdProduto">
+
+    <!-- ID Usuario OCULTO -->
+    <input type="hidden" asp-for="IdUsuario">
+
+    @{
+        //Cria um construtor de Produto BD
+        ProdutoBD produtoBD = new ProdutoBD();
+        
+        //Busca o produto pelo ID
+        Produto produto = produtoBD.BuscarPorId(Model.IdProduto);
+
+        //Recebe o valor completo do produto (em string)
+        string pValor = (produto.Valor).ToString();
+
+        //Remove os centavos do valor - Remove(indice)
+        string valInt = pValor.Remove(pValor.Length - 1);
+        valInt = valInt.Remove(valInt.Length - 1);
+        valInt = valInt.Remove(valInt.Length - 1);
+        
+        //Recebe sem os centavos (em int)
+        int pValorInt = Int32.Parse(valInt);
+
+        //Recebe apenas os centavos (em int) - Remove(de, até)
+        int pValorCen = Int32.Parse(pValor.Remove(0, pValor.Length - 2));
+    }
+
+    <div id="conteudo">
+        <!-- Imagem do produto-->
+        <img id="imagem" src="~/Imagens/Produtos/@produto.Descricao/@produto.Nome .webp">
+        
+        <div class="infos">
+            <!-- Informções do produto-->
+            <h1>@produto.Nome</h1>
+            <h5>@produto.Descricao</h5>
+            <h5>R$@pValorInt<sup style="font-size: 13px;">@pValorCen</sup></h5>
+
+            <br/>
+            <!-- Quantidade-->
+            <label class="quantidade">QUANTIDADE</label>
+            <div class="quantidade">
+                <!-- Diminuir-->
+                <button type="button" onclick="menos('inputQntd')" class="btn" style="width: 40px; height: 45px; padding: 0px">-</button>
+                <!-- Input-->
+                <input id="inputQntd" type="text" asp-for="Quantidade" maxlength="2" required readonly/>
+                <!-- Aumentar-->
+                <button type="button" onclick="mais('inputQntd')" class="btn" style="width: 40px; height: 45px; padding: 0px">+</button>
+            </div>
+            <br/>
+            <!-- Botão que envia a quantidade preenchida -->
+            <input class="btn" type="submit" value="Salvar Alterações">
+        </div>
+    </div>
+</form>

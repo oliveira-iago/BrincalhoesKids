@@ -1,0 +1,146 @@
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.csprojAssemblyReference.cache
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.AssemblyInfoInputs.cache
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.AssemblyInfo.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.csproj.CoreCompileInputs.cache
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.MvcApplicationPartsAssemblyInfo.cache
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.RazorAssemblyInfo.cache
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.RazorAssemblyInfo.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.exe
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.deps.json
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.runtimeconfig.json
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.runtimeconfig.dev.json
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.dll
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.pdb
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.Views.dll
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.Views.pdb
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.TagHelpers.input.cache
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.TagHelpers.output.cache
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.RazorCoreGenerate.cache
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Carrinho\Index.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Cadastro.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Login.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.RazorTargetAssemblyInfo.cache
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.RazorTargetAssemblyInfo.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.Views.pdb
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.csproj.CopyComplete
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\staticwebassets\BrincalhoesKids.StaticWebAssets.Manifest.cache
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\staticwebassets\BrincalhoesKids.StaticWebAssets.xml
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.dll
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.pdb
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.genruntimeconfig.cache
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Perfil.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Barbie.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Marvel.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Produto\StarWars.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Disney.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Carrinho\Editar.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Carrinho\Inserir.cshtml.g.cs
+D:\Backup\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR\Atividade 04\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Editar.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\bin\Debug\netcoreapp3.1\BrincalhoesKids.exe
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\bin\Debug\netcoreapp3.1\BrincalhoesKids.deps.json
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\bin\Debug\netcoreapp3.1\BrincalhoesKids.runtimeconfig.json
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\bin\Debug\netcoreapp3.1\BrincalhoesKids.runtimeconfig.dev.json
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\bin\Debug\netcoreapp3.1\BrincalhoesKids.dll
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\bin\Debug\netcoreapp3.1\BrincalhoesKids.pdb
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\bin\Debug\netcoreapp3.1\BrincalhoesKids.Views.dll
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\bin\Debug\netcoreapp3.1\BrincalhoesKids.Views.pdb
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.csprojAssemblyReference.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.AssemblyInfoInputs.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.AssemblyInfo.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.csproj.CoreCompileInputs.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.RazorAssemblyInfo.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.RazorAssemblyInfo.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.TagHelpers.input.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.TagHelpers.output.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.RazorCoreGenerate.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\Carrinho\Editar.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\Carrinho\Index.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\Carrinho\Inserir.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Barbie.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Disney.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Marvel.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\Produto\StarWars.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Cadastro.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Editar.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Login.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Perfil.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.RazorTargetAssemblyInfo.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.RazorTargetAssemblyInfo.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.Views.pdb
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.csproj.CopyComplete
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\staticwebassets\BrincalhoesKids.StaticWebAssets.Manifest.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\staticwebassets\BrincalhoesKids.StaticWebAssets.xml
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.dll
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.pdb
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 1\Atividade 04\entregue\brincalhoeskids\obj\Debug\netcoreapp3.1\BrincalhoesKids.genruntimeconfig.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.exe
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.deps.json
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.runtimeconfig.json
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.runtimeconfig.dev.json
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.dll
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.pdb
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.Views.dll
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\BrincalhoesKids.Views.pdb
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.csprojAssemblyReference.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.AssemblyInfoInputs.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.AssemblyInfo.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.csproj.CoreCompileInputs.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.RazorAssemblyInfo.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.RazorAssemblyInfo.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.TagHelpers.input.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.TagHelpers.output.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.RazorCoreGenerate.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Carrinho\Editar.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Carrinho\Index.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Carrinho\Inserir.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Barbie.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Disney.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Marvel.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Produto\StarWars.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Cadastro.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Editar.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Login.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Perfil.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.RazorTargetAssemblyInfo.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.RazorTargetAssemblyInfo.cs
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.Views.pdb
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.csproj.CopyComplete
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\staticwebassets\BrincalhoesKids.StaticWebAssets.Manifest.cache
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\staticwebassets\BrincalhoesKids.StaticWebAssets.xml
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.dll
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.pdb
+C:\Users\iagol\OneDrive\Pastas\Estudos\SENAC\01. Aulas\2021\PROJETO INTEGRADOR 2\Atividade 05\Entregue\BrincalhoesKids\obj\Debug\netcoreapp3.1\BrincalhoesKids.genruntimeconfig.cache

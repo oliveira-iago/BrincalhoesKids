@@ -1,0 +1,172 @@
+<!-- Importa Carrinho -->
+@model List<Carrinho>
+
+<!-- Importa a lib de sessões -->
+@using Microsoft.AspNetCore.Http;
+@using System.Collections.Generic;
+
+@{
+    ViewData["Title"] = "Carrinho";
+}
+
+<!-- Estilos -->
+<style>
+    /* Redefinindo o css*/
+    *, .container { border: 0; margin: 0; padding: 0; max-width: none; }
+    .mb-3 { margin-bottom: 0!important; }
+    /* redefinindo Tabela*/
+    .table td, .table th 
+    {
+        padding: 0.75rem;
+        vertical-align: center;
+    }
+
+
+    .logo
+    {
+        width: 50%;
+        min-width: 450px;
+        height: auto;
+    }
+    .foto
+    {
+        height: 60px; width: auto;
+        text-align: left;
+    }
+    #tabela /* Tabela*/
+    {
+        margin-top: 35px;
+        width: 80%;
+        border: 1px solid #dee2e6!important;
+    }
+    #tabela thead th
+    {
+        border-bottom: 0;
+        vertical-align: middle;
+    }
+    thead /* Cabeçalho*/
+    {
+        text-align: center;
+        color: white;
+        border: 0;
+        background-color: #000;
+    }
+    tbody, th, td /* Corpo e colunas*/
+    {
+        text-align: center;
+        vertical-align: middle!important;
+        border: 0;
+    }
+    tr /* Linha*/
+    {
+        border: 0;
+    }
+    #colNome, #colAcao
+    {
+        width: 190px;
+    }
+    #colFoto
+    {
+        width: 100px;
+    }
+    #colQntd
+    {
+        width: 50px;
+    }
+    #colValor, #colTotal
+    {
+        width: 100px;
+    }
+
+</style>
+
+<br/>
+<div class="text-center">
+    <!-- Titulo e subtitulo -->
+    <img class="logo" src="~/Imagens/LETRA-CARRINHO.png">
+</div>
+
+</br> <!-- Quebra de linha -->
+
+<!-- Faz um loop recebendo cada objeto da lista --> 
+@{
+    //contador de itens da lista
+    int cont = 0;
+}
+@foreach (Carrinho item in Model)
+{
+    //apenas se pertencer ao usuario logado
+    if(item.IdUsuario == Context.Session.GetInt32("IdUsuario"))
+    {
+        //cont recebe mais 1
+        cont += 1;
+    }
+}
+<!--Se tiver 1 ou mais itens -->
+@if (cont > 0)
+{
+    <div style="display: flex; justify-content: space-around;">
+        <!-- Tabela onde é exibido os pacotes turisticos -->
+        <table id="tabela" class="table">
+            <!-- Cabeçalho -->
+            <thead>
+                <!-- Colunas -->
+                <th></th>
+                <th>Produto</th>
+                <th>Qntd</th>
+                <th>Unitário</th>
+                <th>Total</th>
+                <th></th>
+            </thead>
+            <!-- Corpo -->
+            <tbody>
+                <!-- Faz um loop recebendo cada objeto da lista --> 
+                @foreach (Carrinho item in Model)
+                {   
+                    //Cria um objeto da classe que manipula o banco de dados Produto
+                    ProdutoBD pBD = new ProdutoBD();
+                
+                    //Busca o produto por Id
+                    Produto produto = pBD.BuscarPorId(item.IdProduto);
+
+                    //Calcula o valor do item do carrinho (unitario * quantidade)
+                    double valorCompra = produto.Valor * item.Quantidade;
+
+                    //Deixa o valor com apenas 2 casas decimais
+                    string totalCompra = valorCompra.ToString("F");
+
+                    //Exibe o item no carrinho apenas se pertencer ao usuario logado
+                    @if(item.IdUsuario == Context.Session.GetInt32("IdUsuario"))
+                    {
+                        //Linha
+                        <tr>
+                            <td id="colFoto"><img class="foto" src="~/Imagens/Produtos/@produto.Descricao/@produto.Nome .webp"></td>
+                            <td id="colNome">@produto.Nome</td>
+                            <td id="colQntd">@item.Quantidade</td>
+                            <td id="colValor">R$@produto.Valor</td>
+                            <td id="colTotal">R$@totalCompra</td>
+                            <td id="colAcao">
+                                <!--Edição do Item do Carrinho
+                                Chama a função do CarrinhoController-->
+                                <a href="/Carrinho/Editar?Id=@item.Id">Editar</a>
+                                <br/>
+                                <!--Exclusão do Item do Carrinho
+                                Chama a função do CarrinhoController-->
+                                <a href="/Carrinho/Excluir?Id=@item.Id">Excluir</a> 
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div class="text-center">
+        <!-- Informa que carrinho está vazio -->
+        <br/>
+        <h3>Não há nada aqui</h3>
+        <h6>Use o menu "Marcas" para comprar</h6>
+    </div>
+}

@@ -1,0 +1,137 @@
+﻿
+<!-- Importa a lib de sessões -->
+@using Microsoft.AspNetCore.Http;
+
+<!DOCTYPE html>
+
+<!-- Estilos-->
+<style>
+    /*Item do menu de marcas*/
+    .dropdown-item
+    {
+        width: 100%; height: auto;
+        max-width: 250px;
+        min-width: 150px;
+        /* Quando passar o mouse*/
+        cursor: pointer;
+    }
+    .dropdown-item:active::before
+    {
+        background-color: red;
+    }
+    .dropdown-item:before
+    {
+        background-color: black;
+    }
+    .marca
+    {
+        max-width: 100px!important;
+    }
+    /*Texto do menu de marcas*/
+    .texto-menu
+    {
+        color: #00aeed;
+        font-size: large;
+        font-weight: 500;
+    }
+    .texto-menu:hover
+    {
+        text-decoration: none;
+        color: #00aeed;
+        font-weight: 650;
+    }
+    .separador
+    {
+        width: 99%;
+        height: 1px;
+        background-color: gray;
+        margin-top: 8px; margin-bottom: 8px;
+    }
+</style>
+
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Brincalhões Kids</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <!-- Fundo de madeira no cabeçalho-->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>                
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row">
+                    <!-- Menus de navegação-->
+                    <ul style="display: flex; align-items: center;" class="navbar-nav flex-grow-1">
+
+                        <!-- LOGO -->
+                        <img width="auto" height="50px" src="~/Imagens/LETRA-LOGO-PAPEL.png" style="cursor: pointer; margin-right: 20px; margin-left: 30px;" onclick="location.href='@Url.Action("Index", "Home")'">
+
+                        <!-- Home -->
+                        <img width="auto" height="40px" src="~/Imagens/Icones/ico-azul-home.png" style="cursor: pointer; margin-left: 10px; margin-top: 5px" onclick="location.href='@Url.Action("Index", "Home")'">
+                        
+                        <!-- Login -->
+                        <img width="auto" height="40px" src="~/Imagens/Icones/ico-azul-perfil.png" style="cursor: pointer; margin-left: 10px; margin-top: 5px" onclick="location.href='@Url.Action("Perfil", "Usuario")'">
+                        
+                        <!-- Carrinho -->
+                        <img width="auto" height="40px" src="~/Imagens/Icones/ico-azul-carrinho.png" style="cursor: pointer; margin-left: 10px; margin-top: 5px" onclick="location.href='@Url.Action("Index", "Carrinho")'">
+                        
+                        <!-- Logout -->
+                        <!-- Se estiver logado, o botao de logout fica visivel  -->
+                        @if (Context.Session.GetInt32("IdUsuario") != null) {
+                            
+                            <img width="auto" height="40px" src="~/Imagens/Icones/ico-azul-logout.png" style="cursor: pointer; margin-left: 10px; margin-top: 5px" onclick="location.href='@Url.Action("Logout", "Usuario")'">
+                            
+                        }
+
+                        <!-- Marcas-->
+                        <li style="margin-left: 35px;" class="nav-item dropdown">
+                            <!-- Texto do menu-->
+                            <a class="texto-menu dropdown-toggle" data-toggle="dropdown" href="#">Marcas</a>
+
+                            <div class="dropdown-menu" aria-labelledby="menuMarcas">
+                                <!-- MARVEL -->
+                                <img class="marca dropdown-item" src="~/Imagens/LOGO-MARVEL.png" onclick="location.href='@Url.Action("Marvel", "Produto")'">
+
+                                <div class="separador"></div>
+
+                                <!-- BARBIE -->
+                                <img class="marca dropdown-item" src="~/Imagens/LOGO-BARBIE.png" onclick="location.href='@Url.Action("Barbie", "Produto")'">
+
+                                <div class="separador"></div>
+
+                                <!-- STAR WARS -->
+                                <img class="marca dropdown-item" src="~/Imagens/LOGO-STAR WARS.png" onclick="location.href='@Url.Action("StarWars", "Produto")'">
+
+                                <div class="separador"></div>
+
+                                <!-- DISNEY -->
+                                <img class="marca dropdown-item" src="~/Imagens/LOGO-DISNEY.png" onclick="location.href='@Url.Action("Disney", "Produto")'">
+                            
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

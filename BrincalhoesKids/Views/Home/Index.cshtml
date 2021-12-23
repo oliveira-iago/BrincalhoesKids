@@ -1,0 +1,382 @@
+﻿@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<!-- Importa a lib de sessões -->
+@using Microsoft.AspNetCore.Http;
+@model List<Produto>;
+
+<!-- Estilos-->
+<style>
+    /* Redefinindo o css*/
+    *, .container { margin: 0; padding: 0; max-width: none; }
+    .mb-3 { margin-bottom: 0!important; }
+
+
+    /* Torna o cabeçalho fixo no topo*/
+    .navbar 
+    {
+        width: 100%;
+        position: fixed;
+        /*overflow: hidden; /*COM ISSO O MENU DE MARCAS BUGA*/
+        z-index: 1000;
+    }
+
+    /*Personalizando a barra de rolagem*/
+    /* Largura */
+    ::-webkit-scrollbar 
+    {
+        width: 12px;
+    }
+    /* Fundo */
+    ::-webkit-scrollbar-track 
+    {
+        background-color: transparent;
+    }
+    /* Barra que navega */
+    ::-webkit-scrollbar-thumb 
+    {
+        background: rgb(128, 128, 128, 0.7); /*pouco visível */
+        border-radius: 30px;
+    }
+    /* Barra fica mais visivel ao passar o mouse */
+    ::-webkit-scrollbar-thumb:hover 
+    {
+        background: rgb(128, 128, 128);
+    }
+
+
+    body
+    {
+        overflow-x: hidden;
+    }
+    /* Seção Principal */
+    div.home 
+    {
+        width: 100%;
+        background-image: url('Imagens/fundo1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div.home img
+    {
+        width: 58%; height: auto;
+        margin: 0; margin-bottom: 35px;
+    }
+    .divisor
+    {
+        width: 100%; height: 3px;
+        background-color: gray;
+    }
+    /* padrão Botão*/
+    #btn 
+    {
+        border: 0;
+        width: auto; height: 53px;
+        margin-bottom: 120px;
+        background-color: #1E90FF; /* Cor de fundo*/
+        padding: 10px; padding-left: 50px; padding-right: 50px;/* Bordas internas*/
+        position: relative;
+        font-family: 'Open Sans', sans-serif; /* Fonte*/
+        font-size: 2vmax; /* Tamanho da fonte (resposiva)*/
+        text-decoration: none; /* Desativa a animação do texto*/
+        color: #fff; /* Cor do texto*/
+        background-image: linear-gradient(bottom, rgb(30, 86, 170) 0%, rgb(51, 132, 212) 100%); /* Cor de fundo*/
+        box-shadow: inset 0px 1px 0px #7fa5f1, 0px 4px 0px #0d486f; /* Sombra*/
+        border-radius: 5px; /* Borda arredondada*/
+        transition: 0.2s;
+    }
+    /* Ao clicar/ativar*/
+    #btn:active
+    {
+        top: 5px; /* Desce alguns pixels*/
+        background-image: linear-gradient(bottom, rgb(30, 93, 170) 100%, rgb(51, 132, 212) 0%); /* Cor de fundo*/
+        box-shadow: inset 0px 1px 0px #7fc7f1, inset 0px -1px 0px #0d346f; /* Sombra*/
+        color: white; /* Cor do texto*/
+        text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3); /* Sombra do texto*/
+        background: rgb(44, 149, 202); /* Fundo*/
+    }
+    /*Antes*/
+    #btn::before 
+    {
+        background-color:#072239; /* Cor de fundo*/
+        content:"";
+        display:block;
+        position:absolute;
+        width: 100%; height: 100%; /* Largura e Altura*/
+        padding-left: 2px; /* Borda de cima por dentro*/
+        padding-right: 2px; /* Borda da direita por dentro*/
+        padding-bottom: 4px; /* Borda de baixo por dentro*/
+        left: -2px; /* Esquerda*/
+        top: 5px; /* Cima*/
+        z-index:-1; /* Ajusta sobreposição*/
+        border-radius: 6px; /* Arredondamento da borda*/
+        box-shadow: 0px 1px 0px white; /* Sombra*/
+    }
+    /*Antes de ativar*/
+    #btn:active::before 
+    {
+        /*Sobe 2 pixel*/
+        top:-2px;
+    }
+
+    /*Seção Parceiros*/
+    div.parceiros
+    {
+        width: 100%;
+    }
+    img.titulo /*Titulo*/
+    {
+        width: 50%;
+        min-width: 400px;
+        margin-top: 60px;
+    }
+    img.parceiros
+    {
+        width: 50%;
+        margin-top: 70px;
+        max-width: 120px;
+    }
+    div.faleConosco
+    {
+        padding: 50px;
+        padding-top: 0;
+    }
+    div.faleConosco form
+    {
+        text-align: left;
+    }
+    div.faleConosco input, textarea
+    {
+        color: #1170B4;
+        font-weight: 500;
+        width: 70%; height: 35px;
+        min-width: 200px; max-width: 430px;
+        border: 2px solid darkgray;
+        border-radius: 5px;
+        padding: 5px; margin-bottom: 15px;
+        outline-width: 0; /*Removendo a animação do focus*/
+    }
+    div.faleConosco textarea
+    {
+        height: 100px;
+    }
+    div.faleConosco label
+    {
+        color: gray; background-color: #FFF;
+        pointer-events: none;
+        font-size: 17px; font-weight: 500;
+        margin-left: 0px; margin-top: 5px;
+        transform-origin: 0 0;
+        transition: transform 0.1s ease-in-out;
+    }
+    /*Botão enviar*/
+    #btnEnviar
+    {
+        border: 0;
+        width: 70%; height: 53px;
+        min-width: 200px; max-width: 430px;
+        margin-bottom: 20px;
+        background-color: #1E90FF; /* Cor de fundo*/
+        padding: 10px; padding-left: 50px; padding-right: 50px;/* Bordas internas*/
+        position: relative;
+        font-family: 'Open Sans', sans-serif; /* Fonte*/
+        font-size: 26px; /* Tamanho da fonte (resposiva)*/
+        text-decoration: none; /* Desativa a animação do texto*/
+        color: #fff; /* Cor do texto*/
+        background-image: linear-gradient(bottom, rgb(30, 86, 170) 0%, rgb(51, 132, 212) 100%); /* Cor de fundo*/
+        box-shadow: inset 0px 1px 0px #7fa5f1, 0px 4px 0px #0d486f; /* Sombra*/
+        border-radius: 5px; /* Borda arredondada*/
+        transition: 0.2s;
+    }
+    /* Ao clicar/ativar*/
+    #btnEnviar:active
+    {
+        top: 5px; /* Desce alguns pixels*/
+        background-image: linear-gradient(bottom, rgb(30, 93, 170) 100%, rgb(51, 132, 212) 0%); /* Cor de fundo*/
+        box-shadow: inset 0px 1px 0px #7fc7f1, inset 0px -1px 0px #0d346f; /* Sombra*/
+        color: white; /* Cor do texto*/
+        text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3); /* Sombra do texto*/
+        background: rgb(44, 149, 202); /* Fundo*/
+    }
+    /*Antes*/
+    #btnEnviar::before 
+    {
+        background-color:#072239; /* Cor de fundo*/
+        content:"";
+        display:block;
+        position:absolute;
+        width: 100%; height: 100%; /* Largura e Altura*/
+        padding-left: 2px; /* Borda de cima por dentro*/
+        padding-right: 2px; /* Borda da direita por dentro*/
+        padding-bottom: 4px; /* Borda de baixo por dentro*/
+        left: -2px; /* Esquerda*/
+        top: 5px; /* Cima*/
+        z-index:-1; /* Ajusta sobreposição*/
+        border-radius: 6px; /* Arredondamento da borda*/
+        box-shadow: 0px 1px 0px white; /* Sombra*/
+    }
+    /*Antes de ativar*/
+    #btnEnviar:active::before 
+    {
+        /*Sobe 2 pixel*/
+        top:-2px;
+    }
+</style>
+
+<!-- Seção principal-->
+<div class="home text-center">
+    <br><br><br>
+    <!-- Titulo-->
+    <img src="~/Imagens/LETRA-LOGO-PAPEL.png">
+    <br/>
+
+    <!-- Se estiver logado-->
+    @if (Context.Session.GetInt32("IdUsuario") != null) 
+    {
+        <!-- Botão Perfil-->
+        <a href="/Usuario/Perfil">
+        <input id="btn" type="button" value="Acessar minha conta">
+        </a>
+    }    
+    else
+    {
+        <!-- Botão Login-->
+        <a href="/Usuario/Login">
+        <input id="btn" type="button" value="Entrar ou criar uma conta">
+        </a>
+    }
+</div>
+
+<!-- Divisor de seções-->
+<div class="divisor"></div>
+
+<!-- Seção Fale Conosco-->
+<div class="faleConosco text-center">
+    <img class="titulo" style="margin-bottom: 55px;" src="~/Imagens/LETRA-FALECONOSCO.png">
+
+    <!-- Div do tipo container-fluid (bootstrap)-->
+    <div class="container-fluid text">
+        
+        <!-- Linha 1 do container (bootstrap)-->
+        <div class="row">
+    
+            <!-- Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+            <div class="col-sm-12 col-md-6 col-lg-6"> 
+                <!-- Formulario fale conosco-->
+                <form>
+                    <label>Contato</label><br/>
+                    <input required name="name" type="text" placeholder="Nome"><br/>
+                    <input required name="email" type="email" placeholder="E-mail"><br/>
+                    
+                    <label>Mensagem</label><br/>
+                    <textarea required name="message" type="text" placeholder="Digite aqui..."></textarea>
+                    <br/>
+                    <input id="btnEnviar" type="submit" value="Enviar">
+                </form>
+            </div>
+            <!-- Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+            <div class="col-sm-12 col-md-6 col-lg-6"> 
+                <!-- Imagem-->
+                <img style="width: 90%;" src="~/Imagens/Toy Story.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Divisor de seções-->
+<div class="divisor"></div>
+
+<!-- Seção Parceiros-->
+<div class="parceiros text-center">
+    <img class="titulo" src="~/Imagens/LETRA-PARCEIROS.png">
+    <h5>Conheça nossos parceiros</h5>
+
+    <!-- Div do tipo container-fluid (bootstrap)-->
+    <div class="container-fluid">
+        
+        <!-- Linha 1 do container (bootstrap)-->
+        <div class="row">
+    
+            <!-- Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+            <div class="col-sm-6 col-md-3 col-lg-3"> 
+                <!-- ESTRELA -->
+                <img class="parceiros" src="~/Imagens/Parceiros/ESTRELA-LOGO.png">
+            </div>
+
+            <!-- Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+            <div class="col-sm-6 col-md-3 col-lg-3"> 
+                <!-- FISHER PRICE -->
+                <img class="parceiros" src="~/Imagens/Parceiros/FISHERPRICE-LOGO.png">    
+            </div>
+
+            <!-- Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+            <div class="col-sm-6 col-md-3 col-lg-3"> 
+                <!-- GROW -->
+                <img class="parceiros" src="~/Imagens/Parceiros/GROW-LOGO.png">    
+            </div>
+
+            <!-- Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+            <div class="col-sm-6 col-md-3 col-lg-3"> 
+                <!-- HASBRO -->
+                <img class="parceiros" src="~/Imagens/Parceiros/HASBRO-LOGO.png">    
+            </div>
+        </div>
+
+        <!-- Linha 2 do container (bootstrap)-->
+        <div class="row">
+    
+            <!-- Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+            <div class="col-sm-6 col-md-3 col-lg-3"> 
+                <!-- HOTWHEELS -->
+                <img class="parceiros" src="~/Imagens/Parceiros/HOTWHEELS-LOGO.png">
+            </div>
+
+            <!-- Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+            <div class="col-sm-6 col-md-3 col-lg-3"> 
+                <!-- LEGO -->
+                <img class="parceiros" src="~/Imagens/Parceiros/LEGO-LOGO.png">    
+            </div>
+
+            <!-- Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+            <div class="col-sm-6 col-md-3 col-lg-3"> 
+                <!-- MATTEL -->
+                <img class="parceiros" src="~/Imagens/Parceiros/MATTEL-LOGO.png">    
+            </div>
+
+            <!-- Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+            <div class="col-sm-6 col-md-3 col-lg-3"> 
+                <!-- MY LITTLE PONY -->
+                <img class="parceiros" src="~/Imagens/Parceiros/MYLITTLEPONY-LOGO.png">    
+            </div>
+        </div>
+
+        <!-- Linha 3 do container (bootstrap)-->
+        <div class="row">
+    
+            <!-- Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+            <div class="col-sm-6 col-md-3 col-lg-3"> 
+                <!-- USUAL -->
+                <img class="parceiros" src="~/Imagens/Parceiros/USUAL-LOGO.png">
+            </div>
+
+            <!-- Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+            <div class="col-sm-6 col-md-3 col-lg-3"> 
+                <!-- NERF -->
+                <img class="parceiros" src="~/Imagens/Parceiros/NERF-LOGO.png">    
+            </div>
+
+            <!-- Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+            <div class="col-sm-6 col-md-3 col-lg-3"> 
+                <!-- POLIPLAC -->
+                <img class="parceiros" src="~/Imagens/Parceiros/POLIPLAC-LOGO.png">    
+            </div>
+
+            <!-- Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+            <div class="col-sm-6 col-md-3 col-lg-3"> 
+                <!-- ROSITA -->
+                <img class="parceiros" src="~/Imagens/Parceiros/ROSITA-LOGO.jpg">    
+            </div>
+        </div>
+    </div>
+</div>

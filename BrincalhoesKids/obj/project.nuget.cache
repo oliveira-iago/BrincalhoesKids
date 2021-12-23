@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "pM/9oI3egHgz/0XW4GZNhZ2gDa8CIdZJBbt1xMYlk4B5ZCnN/edRZRNKJnkX3rUhLrRzl0FrroM/hlTHImtDLQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\iagol\\OneDrive\\Pastas\\Estudos\\SENAC\\01. Aulas\\2021\\PROJETO INTEGRADOR 2\\Atividade 05\\Entregue\\BrincalhoesKids\\BrincalhoesKids.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\iagol\\.nuget\\packages\\mysqlconnector\\2.1.0\\mysqlconnector.2.1.0.nupkg.sha512",
+    "C:\\Users\\iagol\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
